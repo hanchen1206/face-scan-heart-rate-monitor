@@ -2,80 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Face Scan: Heart Rate Monitor — understand your wellness metrics with a simple facial scan." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Face Scan is a personal wellness companion for exploring heart rate and HRV trends through a guided facial scan." />
     <title>Face Scan: Heart Rate Monitor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-glow glow-one"></div>
-    <div class="page-glow glow-two"></div>
-    <header class="site-header shell">
-      <a class="brand" href="#top" aria-label="Face Scan home">
-        <img src="assets/app-icon.png" alt="Face Scan app icon" />
-        <span>Face Scan</span>
-      </a>
-      <nav aria-label="Legal navigation">
-        <a data-legal="privacy" href="#">Privacy Policy</a>
-        <a data-legal="terms" href="#">Terms of Service</a>
-      </nav>
+    <header class="shell header">
+      <a class="brand" href="#top" aria-label="Face Scan home"><img src="assets/app-icon.png" alt="Face Scan app icon" /><span>Face Scan</span></a>
+      <nav aria-label="Legal links"><a data-legal="privacy" href="#">Privacy Policy</a><a data-legal="terms" href="#">Terms of Service</a></nav>
     </header>
-
     <main id="top">
-      <section class="hero shell" aria-labelledby="hero-title">
+      <section class="shell hero">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> WELLNESS, ONE SCAN AWAY</p>
-          <h1 id="hero-title">See your wellness<br /><em>in a new light.</em></h1>
-          <p class="lede">Face Scan turns a quick facial scan into an easy-to-understand view of your heart rate, HRV, and everyday wellness trends.</p>
-          <div class="hero-points" aria-label="Key app metrics">
-            <span><b>01</b> Heart rate</span>
-            <span><b>02</b> HRV insights</span>
-            <span><b>03</b> Wellness trends</span>
-          </div>
-          <p class="medical-note">For personal wellness awareness only. Not intended to diagnose, treat, cure, or prevent any medical condition.</p>
+          <p class="eyebrow">PERSONAL WELLNESS, SIMPLIFIED</p>
+          <h1>See your wellness<br /><em>in a new light.</em></h1>
+          <p>Face Scan helps you explore heart rate, HRV, and everyday wellness trends through a quick guided facial scan.</p>
+          <div class="tags"><span>Heart rate</span><span>HRV insights</span><span>Trend tracking</span></div>
+          <small>For personal wellness awareness only. Not a medical device or diagnostic tool.</small>
         </div>
-        <div class="hero-visual" aria-label="Face Scan health dashboard preview">
-          <div class="halo halo-a"></div><div class="halo halo-b"></div>
-          <div class="device device-main"><img src="assets/app-dashboard.png" alt="Face Scan dashboard showing wellness metrics" /></div>
-          <div class="metric-chip pulse-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.2 5.2 0 0 0-7.4 0L12 6l-1.4-1.4a5.2 5.2 0 0 0-7.4 7.4L12 20.8 20.8 12a5.2 5.2 0 0 0 0-7.4Z"/></svg></span><span><small>Heart rate</small><strong>75 <i>BPM</i></strong></span></div>
-          <div class="metric-chip hrv-chip"><span class="chip-icon moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 15.1A8.7 8.7 0 0 1 8.9 3.9 8.7 8.7 0 1 0 20.1 15.1Z"/></svg></span><span><small>HRV</small><strong>36 <i>ms</i></strong></span></div>
+        <div class="hero-media"><img src="assets/hero-samsung-s25pro.png" alt="Face Scan dashboard on a Samsung Galaxy S25 Pro style phone" /></div>
+      </section>
+      <section class="shell features" aria-labelledby="feature-title">
+        <div class="section-intro"><p class="eyebrow">HOW IT WORKS</p><h2 id="feature-title">Three simple ways to<br />understand your data.</h2></div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="illustration scan-illustration" aria-hidden="true"><div class="face-orb"><span></span><span></span><i></i></div><b class="pulse-line">⌁</b><em></em></div><p class="number">01</p><h3>Guided face scan</h3><p>A gentle visual guide helps keep your face in frame while the app captures subtle color changes in the skin.</p><a href="https://pubmed.ncbi.nlm.nih.gov/16211824/" target="_blank" rel="noreferrer">Learn about rPPG <span>↗</span></a></article>
+          <article class="feature-card"><div class="illustration research-illustration" aria-hidden="true"><div class="research-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><strong>rPPG</strong><span>light · pulse · pattern</span></div><p class="number">02</p><h3>Science, made clear</h3><p>Remote photoplethysmography studies how light reflected from skin can reveal pulse-related signals.</p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=remote+photoplethysmography+heart+rate" target="_blank" rel="noreferrer">Browse research <span>↗</span></a></article>
+          <article class="feature-card"><div class="illustration metrics-illustration" aria-hidden="true"><div class="metric-ring"><b>72</b><span>BPM</span></div><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div><div class="metric-label">BALANCED</div></div><p class="number">03</p><h3>Heart rate &amp; HRV</h3><p>View your latest reading and notice longer-term patterns in heart rate and heart-rate variability.</p><a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/target-heart-rates" target="_blank" rel="noreferrer">Explore heart health <span>↗</span></a></article>
         </div>
       </section>
-
-      <section class="intro shell" aria-labelledby="how-title">
-        <p class="eyebrow"><span></span> HOW IT WORKS</p>
-        <div class="section-heading"><h2 id="how-title">A clearer view of the signals<br />your body already shares.</h2><p>A gentle, guided scan helps make everyday health information feel more approachable—without disrupting your day.</p></div>
-      </section>
-
-      <section class="features shell" aria-label="Face Scan features">
-        <article class="feature-card scan-card">
-          <div class="feature-number">01</div>
-          <div class="feature-copy"><p class="kicker">THE SCIENCE OF A SCAN</p><h3>Read subtle changes<br />in your face.</h3><p>During a guided scan, the camera observes tiny variations in reflected light caused by blood flow beneath the skin. This non-contact approach is commonly known as remote photoplethysmography (rPPG).</p><a class="text-link" href="https://pubmed.ncbi.nlm.nih.gov/16211824/" target="_blank" rel="noreferrer">Explore the research <span>↗</span></a></div>
-          <div class="feature-art scan-art"><img src="assets/scan-flow.png" alt="App screens showing face scan alignment" /></div>
-        </article>
-
-        <article class="feature-card research-card">
-          <div class="feature-number">02</div>
-          <div class="feature-copy"><p class="kicker">BUILT ON RESEARCH</p><h3>Learn from the<br />source material.</h3><p>We believe health information should be transparent. Browse peer-reviewed literature on contactless vital-sign measurement and the rPPG signal-processing methods behind it.</p><a class="text-link" href="https://pubmed.ncbi.nlm.nih.gov/?term=remote+photoplethysmography+heart+rate" target="_blank" rel="noreferrer">View reference library <span>↗</span></a></div>
-          <div class="reference-stack" aria-hidden="true"><div class="paper paper-one"><span>JOURNAL ARTICLE</span><b>Remote<br />photoplethysmography</b><i>Clinical signal review</i></div><div class="paper paper-two"><span>RESEARCH NOTE</span><b>Non-contact<br />vital signs</b><i>Measurement methods</i></div><div class="orbit"></div></div>
-        </article>
-
-        <article class="feature-card report-card">
-          <div class="feature-number">03</div>
-          <div class="feature-copy"><p class="kicker">MAKE SENSE OF YOUR DATA</p><h3>Heart rate and HRV,<br />made human.</h3><p>See your heart rate alongside heart rate variability (HRV), a measure of variation between heartbeats. Follow your trends over time with a calm, easy-to-read summary.</p><a class="text-link" href="https://www.ahajournals.org/doi/10.1161/01.CIR.93.5.1043" target="_blank" rel="noreferrer">Read about HRV <span>↗</span></a></div>
-          <div class="feature-art report-art"><img src="assets/health-report.png" alt="App health report showing heart rate and health score" /></div>
-        </article>
-      </section>
-
-      <section class="closing shell">
-        <div><p class="eyebrow"><span></span> LET'S CONNECT</p><h2>Questions about<br /><em>Face Scan?</em></h2></div>
-        <a class="email" href="mailto:filefastclean@proton.me">filefastclean@proton.me <span>↗</span></a>
-      </section>
+      <section class="shell contact"><p class="eyebrow">GET IN TOUCH</p><h2>Questions? We would love to hear from you.</h2><a href="mailto:filefastclean@proton.me">filefastclean@proton.me <span>↗</span></a></section>
     </main>
-    <footer class="shell"><span>© <span id="year"></span> Face Scan: Heart Rate Monitor</span><span>Personal wellness, thoughtfully presented.</span></footer>
+    <footer class="shell footer"><span>© <span id="year"></span> Face Scan</span><span>Made for everyday wellness</span></footer>
     <script src="site-config.js"></script><script src="script.js"></script>
   </body>
 </html>
